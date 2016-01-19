@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block page_title %}My Project{% endblock %}</title>
+    
+    <link href="css/normalize.css"     rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css"          rel="stylesheet">
+  </head>
+
+  <body>
+    <div class="container">
+      {% block content %}Container{% endblock %}
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  
+</html>

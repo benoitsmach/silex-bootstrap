@@ -1,0 +1,6 @@
+.DS_Store
+config/local.php
+composer.lock
+composer.phar
+nohup.out
+vendor/*

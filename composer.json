@@ -1,0 +1,26 @@
+{
+  "require": {
+		"silex/silex"         : "~1.3",
+    "symfony/twig-bridge" : "*",
+    "symfony/console"     : "*",
+
+		"doctrine/dbal"                 : "~2.2",
+    "twbs/bootstrap"                : "3.*",
+    "components/jquery"             : "2.*",
+    "components/modernizr"          : "2.*",
+    "components/normalize.css"      : "1.*"
+  },
+  "autoload": {
+      "psr-0": { "Controller": "src/", "Console": "src/"}
+  },
+	"scripts": {
+    "post-update-cmd": [
+       "cp vendor/twbs/bootstrap/dist/css/bootstrap.min.css web/css/",
+			 "cp vendor/twbs/bootstrap/dist/js/bootstrap.min.js web/js/",
+       "cp -r vendor/twbs/bootstrap/dist/fonts/ web/fonts/",
+       "cp vendor/components/jquery/jquery.min.js web/js/",
+       "cp vendor/components/modernizr/modernizr.js web/js/",
+       "cp vendor/components/normalize.css/normalize.css web/css/"
+    ]
+  }
+}
